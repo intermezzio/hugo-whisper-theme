@@ -50,6 +50,14 @@
 </div>
 {{ end }}
 
+{{ if .Site.Params.homepage_caption }}
+<div class="col-12">
+  <div class="content">
+    {{ .Site.Params.homepage_caption }}
+  </div>
+
+{{ end }}
+
 {{ end }}
 
 {{ define "footer_js" }}
